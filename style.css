@@ -1,0 +1,506 @@
+<style>
+body {margin: 0;}
+
+@font-face {
+    font-family: 'masked_marvelregular';
+    src: url('mask-webfont.woff2') format('woff2'),
+         url('mask-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'masked_marvel_boldbold';
+    src: url('maskb-webfont.woff2') format('woff2'),
+         url('maskb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'masked_marvel_condensedCn';
+    src: url('maskc-webfont.woff2') format('woff2'),
+         url('maskc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'masked_marvel_expandeexpanded';
+    src: url('maske-webfont.woff2') format('woff2'),
+         url('maske-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'masked_marvel_italicitalic';
+    src: url('maski-webfont.woff2') format('woff2'),
+         url('maski-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'masked_marvel_lightlight';
+    src: url('maskl-webfont.woff2') format('woff2'),
+         url('maskl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'masked_marvel_rotaterotate';
+    src: url('maskr-webfont.woff2') format('woff2'),
+         url('maskr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'comic_bookbold_italic';
+    src: url('comic_book_bold_italic-webfont.woff2') format('woff2'),
+         url('comic_book_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'comic_bookbold';
+    src: url('comic_book_bold-webfont.woff2') format('woff2'),
+         url('comic_book_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'comic_bookitalic';
+    src: url('comic_book_italic-webfont.woff2') format('woff2'),
+         url('comic_book_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'comic_bookregular';
+    src: url('comic_book-webfont.woff2') format('woff2'),
+         url('comic_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    padding: 14px 16px;
+    width: 15em;
+    margin: auto;
+   
+   
+    font-family: verdana;
+    color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #ECCEF5;
+    padding: 30px;
+    text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+    background-color: black;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: white;
+    color: black;
+}
+
+div.content {
+    margin-left: 0%;
+    
+    padding: 1px 16px;
+    height: 1000px;
+    
+}
+
+@media screen and (max-width: 1050px){
+    ul.sidenav {
+        width:100%;
+        height:auto;
+        position:center;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left:0;}
+}
+
+@media screen and (max-width: 400px){
+    ul.sidenav li a {
+    	width:250px;
+    	position: center;
+        text-align: center;
+        float: none;
+    }
+}
+
+li a {
+	border-radius: 50px;
+}
+
+li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+li.dropdown {
+    display: block;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    background-color: transparent;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.example-obtuse {
+  position:relative;
+  padding:20px 50px;
+  margin:1;
+  color:#000;
+  font-family: comic_bookbold;
+  font-size: 4em;
+  text-align: center;
+  background:#f3961c; /* default background for browsers without gradient support */
+  /* css3 */
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#ecc845), to(#f3961c));
+  background:-moz-linear-gradient(#ecc845, #f3961c);
+  background:-o-linear-gradient(#ecc845, #f3961c);
+  background:linear-gradient(#ecc845, #f3961c);
+  /* Using longhand to avoid inconsistencies between Safari 4 and Chrome 4 */
+  -webkit-border-top-left-radius:50px 100px;
+  -webkit-border-top-right-radius:50px 100px;
+  -webkit-border-bottom-right-radius:100px 100px;
+  -webkit-border-bottom-left-radius:100px 100px;
+  -moz-border-radius:50px / 100px;
+  border-radius:50px / 100px;
+}
+
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+.example-obtuse + p {margin:10px 150px 2em 0; text-align:right; font-style:italic;}
+
+/* creates the larger triangle */
+.example-obtuse:before {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  right:80px;
+  border-width:0 0 30px 50px;
+  border-style:solid;
+  border-color:transparent #f3961c;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+/* creates the smaller triangle */
+.example-obtuse:after {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  right:110px;
+  border-width:0 0 30px 20px;
+  border-style:solid;
+  border-color:transparent #332073;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+ 
+
+body {
+	    background:
+        -moz-radial-gradient(#332073 15%, transparent 16%),
+        -moz-radial-gradient(#332073 15%, transparent 16%),
+        black;
+    background:
+        -webkit-radial-gradient(#332073 15%, transparent 16%),
+        -webkit-radial-gradient(#332073 15%, transparent 16%),
+        black;
+        
+    /* Controls the second layer of dots */
+    background-position: 0 0, 75px 75px;
+    
+    -webkit-background-size:50px 50px;
+    -moz-background-size:50px 50px;
+    background-size:50px 50px;
+    margin: auto;
+}
+
+h1 {
+
+    margin: auto;
+    position: center;
+    margin-top: 1em;
+    padding: 20px;
+    width: 30%;
+    background-color: black;
+    border-radius: 50px;
+	border: 10px #B10000;
+	font-family: comic_bookbold;
+	font-size: 3em;
+	text-align: center;
+	color: #ecc845;
+	
+}
+
+p {
+	margin: auto;
+	margin-top: 1em;
+	
+	position: center;
+	
+	/*background-color: white;*/
+	background-color: #ecc845;
+	outline-color: #B10000;
+    border-radius: 50px;
+	border: 10px #B10000;
+	padding: 20px;
+	width: 60%;
+    top: .5em;
+	font-size: 1.5em;
+	font-family: futura;
+	text-align: center;
+}
+
+
+.clickackble {
+	margin: auto;
+	margin-top: 1em;
+	
+	position: center;
+	
+	/*background-color: white;*/
+	background-color: #ecc845;
+	outline-color: #B10000;
+    border-radius: 50px;
+	border: 10px #B10000;
+	padding: 20px;
+	width: 60%;
+    top: .5em;
+	font-size: 1.5em;
+	font-family: futura;
+	text-align: center;
+}
+
+
+.clickable:hover:not(.active){
+	background-color: black;
+	color: #FFEF00;
+}
+
+.comic {
+	background-color: white;
+	border-color: black;
+	border-width: 10px;
+	border-style: solid;
+	border-radius: 0px;
+	
+}
+
+pic {
+	position: center;
+	text-align: center;
+	
+	
+	top: .5em;
+	margin: auto;
+	display: block;
+	
+}
+
+#fixedbutton {
+    position: fixed;
+    text-align: center;
+    bottom: 20px;
+    left: 10px; 
+    padding: 14px 16px;
+    width: 3em;
+    margin: auto;
+   	background-color: black;
+   	border-color: #ac2c23;
+   	border-radius: 50px;
+   	border-width: 10px;	
+    font-family: masked_marvelregular;
+    font-size: 2em;
+    color: white;
+   
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: center;
+  margin: auto;
+}
+
+.mySlides {
+	position: center;
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.picture{
+	position:center;
+}
+
+
+</style>
