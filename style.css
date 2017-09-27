@@ -341,7 +341,7 @@ p {
 }
 
 
-.clickackble {
+.clickable {
 	margin: auto;
 	margin-top: 1em;
 	
@@ -408,8 +408,9 @@ pic {
 
 /* Slideshow container */
 .slideshow-container {
-  
-  position: center;
+  max-width: 500 px;
+  position: relative;
+  padding: 100 px;
   margin: auto;
 }
 
@@ -498,8 +499,9 @@ pic {
   to {opacity: 1}
 }
 
-.picture{
-	position:center;
+img.center {
+    display: block;
+    margin: 0 auto;
 }
 
 
