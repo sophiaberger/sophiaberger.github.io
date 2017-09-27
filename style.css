@@ -341,7 +341,7 @@ p {
 }
 
 
-.clickackble {
+.clickable {
 	margin: auto;
 	margin-top: 1em;
 	
@@ -374,6 +374,8 @@ p {
 	border-radius: 0px;
 	
 }
+
+
 
 pic {
 	position: center;
@@ -408,8 +410,9 @@ pic {
 
 /* Slideshow container */
 .slideshow-container {
+  max-width: 1000px;
+  position: relative;
   
-  position: center;
   margin: auto;
 }
 
@@ -421,10 +424,11 @@ pic {
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
+  position: center;
+  bottom: 50%;
   width: auto;
   margin-top: -22px;
+  z-index: 1;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -436,7 +440,9 @@ pic {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  
+  margin-left: 500px;
+  border-radius: 30px 0 0 30px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -498,9 +504,7 @@ pic {
   to {opacity: 1}
 }
 
-.picture{
-	position:center;
-}
+
 
 
 </style>
