@@ -314,7 +314,7 @@ h1 {
     background-color: black;
     border-radius: 50px;
 	border: 10px #B10000;
-	font-family: fonts/comic_bookbold;
+	font-family: url ('fonts/comic_bookbold');
 	font-size: 3em;
 	text-align: center;
 	color: #ecc845;
@@ -400,7 +400,7 @@ pic {
    	border-color: #ac2c23;
    	border-radius: 50px;
    	border-width: 10px;	
-    font-family: fonts/masked_marvelregular;
+    font-family: url ('fonts/masked_marvelregular');
     font-size: 2em;
     color: white;
    
