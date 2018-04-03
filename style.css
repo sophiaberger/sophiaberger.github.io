@@ -12,89 +12,6 @@ body {margin: 0;}
 
 
 
-/*
-@font-face {
-    font-family: 'masked_marvel_boldbold';
-    src: url('maskb-webfont.woff2') format('woff2'),
-         url('maskb-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'masked_marvel_condensedCn';
-    src: url('maskc-webfont.woff2') format('woff2'),
-         url('maskc-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'masked_marvel_expandeexpanded';
-    src: url('maske-webfont.woff2') format('woff2'),
-         url('maske-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'masked_marvel_italicitalic';
-    src: url('maski-webfont.woff2') format('woff2'),
-         url('maski-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'masked_marvel_lightlight';
-    src: url('maskl-webfont.woff2') format('woff2'),
-         url('maskl-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'masked_marvel_rotaterotate';
-    src: url('maskr-webfont.woff2') format('woff2'),
-         url('maskr-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-@font-face {
-    font-family: 'comic_bookbold_italic';
-    src: url('comic_book_bold_italic-webfont.woff2') format('woff2'),
-         url('comic_book_bold_italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-*/
-
 @font-face {
     font-family: 'comic_bookbold';
     src: url('fonts/comic_book_bold-webfont.woff2') format('woff2'),
@@ -104,27 +21,6 @@ body {margin: 0;}
 
 }
 
-/*
-@font-face {
-    font-family: 'comic_bookitalic';
-    src: url('comic_book_italic-webfont.woff2') format('woff2'),
-         url('comic_book_italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'comic_bookregular';
-    src: url('comic_book-webfont.woff2') format('woff2'),
-         url('comic_book-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-*/
 
 canvas {
     padding-left: 0;
