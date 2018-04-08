@@ -12,26 +12,39 @@
 <center>
 
 
-<div class="mySlides fade picture">
 <video width="640" height="480" controls> 
 	<source src="Portfolio/Final Model.0001.mp4" type = "video/mp4"> 
 </video>
-<br>
-<div class = "mySlides">
-<img src="Portfolio/Berger_Complex.png">
+
+</center>
 </div>
-<div class = "mySlides">
-<img src="Portfolio/Berger_Simple.png">
+</div>
+
+</br>
+<p class = "comic">
+Below are some stills of 3D works I have done. 
+</p>
+<div style="text-align:center">
+<div class="slideshow-container">
+<center>
+<br>
+<div class = "mySlides fade picture">
+<img src="Portfolio/Berger_Complex.png" style = "width:50%">
+</div>
+<div class = "mySlides fade picture">
+<img src="Portfolio/Berger_Simple.png" style = "width:50%">
 </div>
 </center>
 
-
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+
+
 <!--the javascript part
 -->
-</div>
-</div>
+
 
 <script>
 var slideIndex = 1;
@@ -52,6 +65,8 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 </script>
+
+<a class="active" href="index.html" id = "fixedbutton">Home</a>
 
 </body>
 </html>
