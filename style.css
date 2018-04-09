@@ -221,12 +221,12 @@ h1 {
     position: center;
     margin-top: 1em;
     padding: 20px;
-    width: 30%;
+    width: 40%;
     background-color: black;
     border-radius: 50px;
 	border: 10px #B10000;
 	font-family:comic_bookbold;
-	font-size: 3em;
+	font-size: 7.5vh;
 	text-align: center;
 	color: #ecc845;
 	
@@ -246,7 +246,8 @@ p {
 	padding: 20px;
 	width: 60%;
     top: .5em;
-	font-size: 1.5em;
+	font-size: 2.5vw;
+	/* vw for reading, vh for titles*/
 	font-family: futura;
 	text-align: center;
 }
@@ -263,10 +264,10 @@ p {
 	outline-color: #B10000;
     border-radius: 50px;
 	border: 10px #B10000;
-	padding: 20px;
-	width: 60%;
+	padding: 3vh;
+	width: 60vw;
     top: .5em;
-	font-size: 1.5em;
+	font-size: 3vw;
 	font-family: futura;
 	text-align: center;
 }
@@ -305,7 +306,7 @@ pic {
     bottom: 20px;
     left: 10px; 
     padding: 14px 16px;
-    width: 3em;
+    width: 3vh;
     margin: auto;
    	background-color: black;
    	border-color: #ac2c23;
@@ -317,29 +318,26 @@ pic {
    
 }
 
-* {box-sizing:border-box}
-
+* {box-sizing:border-box} 
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  
   margin: auto;
 }
 
+/* Hide the images by default */
 .mySlides {
-	position: center;
     display: none;
 }
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: center;
-  bottom: 50%;
+  position: absolute;
+  top: 50%;
   width: auto;
   margin-top: -22px;
-  z-index: 1;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -351,9 +349,7 @@ pic {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  
-  margin-left: 500px;
-  border-radius: 30px 0 0 30px;
+  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -383,9 +379,9 @@ pic {
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
